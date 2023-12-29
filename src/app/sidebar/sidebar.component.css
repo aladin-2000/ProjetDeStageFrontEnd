@@ -1,0 +1,75 @@
+
+
+
+
+.sidebar-nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-nav a:hover {
+    background-color: #555;
+}
+.sidebar-title {
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.sidebar-title-boot {
+    color: #ffd700;
+}
+h1{
+    text-align: center;
+    columns: #ffd700;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%; /* Extend width beyond viewport */
+    height: 100%;
+    background-color: #333;
+  }
+  
+  .sidebar-logo {
+    padding: 20px; /* Adjust as needed */
+    color: white; /* Text color for the logo */
+  }
+  
+  .sidebar-title {
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+  
+  .sidebar-title-boot {
+    color: #ffd700; /* Adjust to your preferred boot color */
+  }
+  
+  .sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav li {
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .sidebar-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+  }
+  

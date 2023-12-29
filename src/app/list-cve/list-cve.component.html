@@ -1,0 +1,129 @@
+<br><br><br>
+<h1>List Of Assets</h1>
+<br><br><br>
+
+<!--
+<div class="asset-list">
+    <a *ngFor="let asset of assets" class="asset-link" href="#" (click)="ConstruireVendorProductVersion(asset); SearchAssetByName(Name)">
+        {{ asset.name }}
+    </a>
+</div>
+-->
+
+
+<table class="asset-table">
+    <thead>
+      <tr>
+        <th i18n >Type</th>
+        <th i18n>Name</th>
+        <th i18n>Vendor</th>
+        <th i18n>Product</th>
+        <th i18n>Version</th>
+        <th i18n>Date</th>
+
+        <th i18n class="action-column">Action</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let asset of assets">
+      <tr>
+        <td>{{ asset.type }}</td>
+        <td>{{ asset.name }}</td>
+        <td>{{ asset.vendor }}</td>
+        <td>{{ asset.product }}</td>
+        <td>{{ asset.version }}</td>
+        <td>{{ asset.date }}</td>
+        <td>
+            <button i18n class="btn btn-info" data-bs-toggle="modal" data-bs-target="#AjouteCveModal" (click)="ConstruireVendorProductVersion(asset); SearchAssetByName(Name)">Afficher la Liste des CVE </button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+
+
+
+<br><br><br>
+
+
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>sourceIdentifier</th>
+            <th>published</th>
+            <th>lastModified</th>
+            <th>vulnStatus</th>
+            <th>cisaExploitAdd</th>
+            <th>cisaActionDue</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let cve of cves">
+        <tr>
+            <td>{{cve[0]}}</td>
+            <td>{{cve[1]}}</td>
+            <td>{{cve[2]}}</td>
+            <td>{{cve[3]}}</td>
+            <td>{{cve[4]}}</td>
+            <td>{{cve[5]}}</td>
+            <td>{{cve[6]}}</td>
+           
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<!--  Modal -->
+<div class="modal fade custom-modal-size" id="AjouteCveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 i18n class="modal-title" id="exampleModalLabel">Ajouter des cve</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+
+
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>sourceIdentifier</th>
+                    <th>published</th>
+                    <th>lastModified</th>
+                    <th>vulnStatus</th>
+                    <th>cisaExploitAdd</th>
+                    <th>cisaActionDue</th>
+                    <th> Action </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let cve of cves">
+                <tr>
+                    <td>{{cve[0]}}</td>
+                    <td>{{cve[1]}}</td>
+                    <td>{{cve[2]}}</td>
+                    <td>{{cve[3]}}</td>
+                    <td>{{cve[4]}}</td>
+                    <td>{{cve[5]}}</td>
+                    <td>{{cve[6]}}</td>
+                    <td><button  class="btn btn-info">Add Cve </button>
+                    </td>
+                   
+                </tr>
+            </tbody>
+        </table>
+        
+        
+        
+      </div>
+    </div>
+  </div>

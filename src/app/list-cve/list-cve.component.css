@@ -1,0 +1,221 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Wrap items onto multiple lines if needed */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.section {
+    flex-basis: calc(25% - 20px); /* Adjust the width of each section */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(0, 96, 230);
+}
+
+
+
+
+
+
+
+
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.custom-table th, .custom-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-table button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-table button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+
+.custom-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #3498db;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some spacing at the bottom */
+}
+
+.asset-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.asset-link {
+    padding: 15px;
+    background-color: #3498db;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.asset-link:hover {
+    background-color: #010153;
+    transform: translateY(-2px);
+}
+
+.asset-link:focus {
+    outline: none;
+    background-color: #020257;
+    transform: translateY(-1px);
+}
+
+.asset-link:active {
+    transform: translateY(0);
+}
+.asset-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.asset-link {
+    padding: 10px;
+    background-color: #003aaea5;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.asset-link:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+.chart-canvas {
+    width: 70%; /* Increase the width */
+    max-width: 500px; /* Adjust the maximum width */
+    margin: 0 auto; /* Horizontally center the canvas */
+    display: block; /* This is the default, but just to be sure */
+  }
+  
+
+  /* Style the table */
+.asset-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  /* Style the table header row */
+  .asset-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the table body rows */
+  .asset-table td {
+    padding: 10px;
+    border: 10px solid #ccc;
+  }
+  
+  /* Style the action column */
+  .action-column {
+    width: 250px; /* Adjust width as needed */
+  }
+  
+  /* Style even and odd rows differently for better readability */
+  .asset-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+
+  
+
+  .custom-modal-size .modal-dialog {
+    max-width: 80%; /* Définissez la largeur souhaitée, par exemple 80% de la largeur de la fenêtre parente */
+    max-height: 80vh; /* Définissez la hauteur souhaitée, par exemple 80% de la hauteur de la fenêtre visible (viewport height) */
+    width: auto;
+}
+
+.custom-modal-size .modal-content {
+    width: 100%; /* Assurez-vous que le contenu s'adapte à la largeur maximale */
+    height: 100%; /* Assurez-vous que le contenu s'adapte à la hauteur maximale */
+}
+
+.custom-modal-size .modal-body {
+    max-height: 70vh; /* Définissez la hauteur maximale du contenu de la fenêtre modale si nécessaire */
+    overflow-y: auto; /* Ajoutez une barre de défilement vertical si le contenu dépasse la hauteur maximale */
+}
+  
